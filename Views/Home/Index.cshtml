@@ -1,11 +1,11 @@
-﻿@model IEnumerable<MCVmma.Models.Usuario> 
+﻿@model IEnumerable<MCVmma.Models.Usuario>
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="row">
     <div class="offset-9 col-3 mb-3" >
-        <a asp-action="Crear" asp-controller="Home" class="btn-success d-block mx-auto btn-lg">Nuevo usuario </a>
+        <a asp-action="Crear" asp-controller="Home" class="btn-success d-block mx-auto btn-lg"><i class="fa-solid fa-diamond"></i> Nuevo usuario </a>
     </div>
  </div>
 
@@ -31,7 +31,7 @@
                                         @Html.DisplayNameFor(x=>x.Password)
                                     </th>
                                     <th>
-                                        @Html.DisplayNameFor(x=>x.FkRol)
+                                        @Html.DisplayNameFor(x=>x.Rol)
                                     </th>
                                     <th>Acciones</th>
                                 </tr>
@@ -50,11 +50,11 @@
                                             @Html.DisplayFor(x=>iteam.Password)
                                         </td>
                                         <td>
-                                        @Html.DisplayFor(x=>iteam.FkRol)
+                                        @Html.DisplayFor(x=>iteam.Rol.Name)
                                         </td>
                                         <td>
-                                            <a class="btn btn-warning" >Editar</a>
-                                            <a class="btn btn-danger">Eliminar</a>
+                                            <a class="btn btn-warning"><i class="fa-solid fa-pen-nib"></i>Editar </a>
+                                            <a class="btn btn-danger"><i class="fa-solid fa-poo"></i>Eliminar </a>
 
                                         </td>
                                     </tr>

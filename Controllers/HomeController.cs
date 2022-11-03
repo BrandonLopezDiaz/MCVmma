@@ -31,8 +31,13 @@ namespace MCVmma.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var response = await _context.UsuarioDb.ToListAsync();
+            var response = await _context.UsuarioDb.Include(a=>a.Rol).ToListAsync();
             return View(response);
+        }
+        [HttpGet]
+        public IActionResult crear()
+        {
+            return View();
         }
         public IActionResult Privacy()
         {
