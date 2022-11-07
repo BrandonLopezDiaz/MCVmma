@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MCVmma.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221027122614_migracios")]
-    partial class migracios
+    [Migration("20221107030125_tarea")]
+    partial class tarea
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

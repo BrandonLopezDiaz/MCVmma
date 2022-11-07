@@ -2,7 +2,7 @@
 
 namespace MCVmma.Migrations
 {
-    public partial class migracios : Migration //hola
+    public partial class tarea : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
