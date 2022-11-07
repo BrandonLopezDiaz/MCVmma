@@ -39,6 +39,16 @@ namespace MCVmma.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Editar()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Eliminar()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

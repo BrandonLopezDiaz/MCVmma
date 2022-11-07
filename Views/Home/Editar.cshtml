@@ -1,0 +1,41 @@
+﻿@model MCVmma.Models.Usuario
+@{
+	ViewData["Title"]="crear usuario";
+}
+@*<h1>@ViewData["Title"]</h1>*@
+
+
+<div class="container-fluid">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h1 class="text-white"><strong>Nuevo usuario</strong></h1>
+            </div>
+
+            <div class="card-body">
+               
+                <form asp-action="Crear" method="post">
+                    <div class="form-group">
+                        <label asp-for="Name">Nombre</label>
+                        <input asp-for="Name" class="form-control" placeholder="ingresar nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="User">Usuario</label>
+                        <input asp-for="User" class="form-control" placeholder="ingresar usuario" required>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password">Contraseña</label>
+                        <input asp-for="Password" class="form-control" placeholder="ingresar Contraseña" required>
+                    </div>
+                    <div class="container-fluid">
+                        <button type="submit" class="btn btn-success"><i class="fa-solid fa-feather"></i> Crear</button>
+                    </div>
+                </form>
+                <br />
+                <div class="container-fluid">
+                    <a class="btn btn-outline-success" asp-controller="Home" asp-action="Index"> Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
